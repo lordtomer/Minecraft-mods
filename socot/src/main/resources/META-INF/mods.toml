@@ -1,0 +1,32 @@
+
+modLoader="javafml" #mandatory
+
+loaderVersion="[31,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+
+issueTrackerURL="http://my.issue.tracker/" #optional
+
+[[mods]] #mandatory
+
+modId="sc_mod" #mandatory
+
+version="1.15.2-1.0.0" #mandatory
+
+displayName="sucot" #mandatory
+
+logoFile="examplemod.png" #optional
+
+credits="Thanks to me" #optional
+
+authors="Tomer is cool yes" #optional
+
+description='''
+this mod has buildinf blocks to build a suca!!
+'''
+
+
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"

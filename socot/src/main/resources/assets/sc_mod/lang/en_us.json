@@ -1,6 +1,10 @@
 {
   "item.sc_mod.lulav": "Lulav",
-  "block.sc_mod.suca_wall": "Suca Wall",
+  "block.sc_mod.suca_wall_1": "Suca Wall people",
+  "block.sc_mod.suca_wall_2": "Suca Wall candles",
+  "block.sc_mod.suca_wall_3": "Suca Wall palm trees",
+  "block.sc_mod.suca_wall_4": "Suca Wall whine",
+  "block.sc_mod.suca_wall_5": "Suca Wall",
   "item.sc_mod.hilok": "Hilok",
   "itemGroup.sucot": "Sucot",
   "item.sc_mod.atrog": "Atrog"

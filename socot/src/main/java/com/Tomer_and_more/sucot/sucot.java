@@ -38,7 +38,7 @@ public class sucot {
         @Override
         public ItemStack createIcon()
         {
-            return new ItemStack(RegistryHandler.LULAV.get());
+            return new ItemStack(RegistryHandler.ATROG.get());
         }
     };
 

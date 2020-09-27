@@ -29,11 +29,19 @@ public class RegistryHandler {
     public static final RegistryObject<Item> ATROG = ITEMS.register("atrog", ItemBase::new);
 
 //BLOCKS
-    public static final RegistryObject<Block> SUCA_WALL = BLOCKS.register("suca_wall", suca_wall::new);
+    public static final RegistryObject<Block> SUCA_WALL_1 = BLOCKS.register("suca_wall_1", suca_wall::new);
+    public static final RegistryObject<Block> SUCA_WALL_2 = BLOCKS.register("suca_wall_2", suca_wall::new);
+    public static final RegistryObject<Block> SUCA_WALL_3 = BLOCKS.register("suca_wall_3", suca_wall::new);
+    public static final RegistryObject<Block> SUCA_WALL_4 = BLOCKS.register("suca_wall_4", suca_wall::new);
+    public static final RegistryObject<Block> SUCA_WALL_5 = BLOCKS.register("suca_wall_5", suca_wall::new);
 
 //BLOCK ITEMS
-    public static final RegistryObject<Item> SUCA_WALL_ITEM = ITEMS.register("suca_wall", () -> new BlockItemBase(SUCA_WALL.get()));
+    public static final RegistryObject<Item> SUCA_WALL_1_ITEM = ITEMS.register("suca_wall_1", () -> new BlockItemBase(SUCA_WALL_1.get()));
+    public static final RegistryObject<Item> SUCA_WALL_2_ITEM = ITEMS.register("suca_wall_2", () -> new BlockItemBase(SUCA_WALL_2.get()));
+    public static final RegistryObject<Item> SUCA_WALL_3_ITEM = ITEMS.register("suca_wall_3", () -> new BlockItemBase(SUCA_WALL_3.get()));
+    public static final RegistryObject<Item> SUCA_WALL_4_ITEM = ITEMS.register("suca_wall_4", () -> new BlockItemBase(SUCA_WALL_4.get()));
+    public static final RegistryObject<Item> SUCA_WALL_5_ITEM = ITEMS.register("suca_wall_5", () -> new BlockItemBase(SUCA_WALL_5.get()));
 //KIPA
-    RegistryObject<ArmorItem> HILOK = ITEMS.register("hilok", () -> new ArmorItem(ModArmorMaterial.HILOK,
-        EquipmentSlotType.HEAD, new Item.Properties().group(sucot.TAB)));
+    public static final RegistryObject<ArmorItem> HILOK = ITEMS.register("hilok",
+        () -> new ArmorItem(ModArmorMaterial.HILOK, EquipmentSlotType.HEAD, new Item.Properties().group(sucot.TAB)));
 }

@@ -15,7 +15,7 @@ import java.util.function.Supplier;
 public enum ModArmorMaterial implements IArmorMaterial {
 
     HILOK(sucot.MOD_ID + ":hilok", 50, new int[] {100, 0, 0, 0}, 50,
-            SoundEvents.AMBIENT_CAVE, 40.0f, () -> {return Ingredient.fromItems(RegistryHandler.SUCA_WALL_ITEM.get())});
+            SoundEvents.AMBIENT_CAVE, 40.0f, () -> { return Ingredient.fromItems(RegistryHandler.ATROG.get()); });
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[] {11, 16, 15, 13};
     private final String name;
@@ -26,7 +26,7 @@ public enum ModArmorMaterial implements IArmorMaterial {
     private final float toughness;
     private final Supplier<Ingredient> repairMaterial;
 
-    ModArmor(String name, int maxDamageFactor, int[] damageRedactionArray,
+    ModArmorMaterial(String name, int maxDamageFactor, int[] damageRedactionArray,
              int enchantAbility, SoundEvent soundEvent, float toughness, Supplier<Ingredient> repairMaterial){
         this.name = name;
         this.maxDamageFactor = maxDamageFactor;
@@ -49,7 +49,7 @@ public enum ModArmorMaterial implements IArmorMaterial {
 
     @Override
     public int getEnchantability() {
-        return enchantAbility;
+        return this.enchantAbility;
     }
 
     @Override
